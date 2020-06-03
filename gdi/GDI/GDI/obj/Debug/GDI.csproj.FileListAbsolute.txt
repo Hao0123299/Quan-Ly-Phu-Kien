@@ -1,0 +1,10 @@
+C:\Users\hao01\OneDrive\Desktop\gdi\gdi\GDI\GDI\obj\Debug\GDI.csprojAssemblyReference.cache
+C:\Users\hao01\OneDrive\Desktop\gdi\gdi\GDI\GDI\obj\Debug\GDI.Form1.resources
+C:\Users\hao01\OneDrive\Desktop\gdi\gdi\GDI\GDI\obj\Debug\GDI.Properties.Resources.resources
+C:\Users\hao01\OneDrive\Desktop\gdi\gdi\GDI\GDI\obj\Debug\GDI.csproj.GenerateResource.cache
+C:\Users\hao01\OneDrive\Desktop\gdi\gdi\GDI\GDI\obj\Debug\GDI.csproj.CoreCompileInputs.cache
+C:\Users\hao01\OneDrive\Desktop\gdi\gdi\GDI\GDI\bin\Debug\GDI.exe.config
+C:\Users\hao01\OneDrive\Desktop\gdi\gdi\GDI\GDI\bin\Debug\GDI.exe
+C:\Users\hao01\OneDrive\Desktop\gdi\gdi\GDI\GDI\bin\Debug\GDI.pdb
+C:\Users\hao01\OneDrive\Desktop\gdi\gdi\GDI\GDI\obj\Debug\GDI.exe
+C:\Users\hao01\OneDrive\Desktop\gdi\gdi\GDI\GDI\obj\Debug\GDI.pdb
