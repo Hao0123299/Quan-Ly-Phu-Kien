@@ -18,7 +18,8 @@ namespace CuoiKy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI.frmMain());
+           // Application.Run(new GUI.frmMain());
+            Application.Run(new GUI.frmNhanVien());
         }
     }
 }
