@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using BUS;
+<<<<<<< HEAD
 using DAO;
+=======
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
 
 namespace GUI
 {
@@ -24,6 +27,7 @@ namespace GUI
         private void btnXem_Click(object sender, EventArgs e)
         {
             NhanvienBUS.Instance.Xem(dtgvThongTin);
+<<<<<<< HEAD
            
         }
 
@@ -104,5 +108,8 @@ namespace GUI
         }
 
         
+=======
+        }
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
     }
 }

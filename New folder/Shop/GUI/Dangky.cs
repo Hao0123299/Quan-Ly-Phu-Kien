@@ -17,6 +17,7 @@ namespace GUI
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
         private void Dangky_Load(object sender, EventArgs e)
         {
@@ -27,5 +28,7 @@ namespace GUI
         {
 
         }
+=======
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
     }
 }

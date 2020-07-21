@@ -43,7 +43,10 @@
   <ItemGroup>
     <Compile Include="DangnhapDTO.cs" />
     <Compile Include="HanghoaDTO.cs" />
+<<<<<<< HEAD
     <Compile Include="KhachhangDTO.cs" />
+=======
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
     <Compile Include="NhanvienDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

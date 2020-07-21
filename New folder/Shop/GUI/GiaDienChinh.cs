@@ -48,6 +48,7 @@ namespace GUI
             kh.Show();
         }
 
+<<<<<<< HEAD
         private void btnDangKy_ItemClick(object sender, ItemClickEventArgs e)
         {
             Dangky dk = new Dangky();
@@ -66,5 +67,13 @@ namespace GUI
         {
           
         }
+=======
+        /* private void btnThongTinChiTietNhanVien_ItemClick(object sender, ItemClickEventArgs e)
+         {
+             NhanVien nv = new NhanVien();
+             nv.MdiParent = this;
+             nv.Show();
+         }*/
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
     }
 }

@@ -50,10 +50,13 @@
             this.rbPageDanhMuc = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+<<<<<<< HEAD
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btnBanHang = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.btnBaoCaoCuoiNgay = new DevExpress.XtraBars.BarButtonItem();
+=======
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,18 +76,28 @@
             this.barButtonItem2,
             this.btnKho,
             this.barButtonItem3,
+<<<<<<< HEAD
             this.btnThongTinKhangHang,
             this.btnBanHang,
             this.btnBaoCaoCuoiNgay});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
             this.ribbon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbon.MaxItemId = 14;
+=======
+            this.btnThongTinKhangHang});
+            this.ribbon.Location = new System.Drawing.Point(0, 0);
+            this.ribbon.MaxItemId = 12;
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.rbPageHeThong,
             this.rbPageQuanLy,
             this.rbPageDanhMuc});
+<<<<<<< HEAD
             this.ribbon.Size = new System.Drawing.Size(1270, 177);
+=======
+            this.ribbon.Size = new System.Drawing.Size(1482, 209);
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // btnDoiMatKhau
@@ -107,10 +120,16 @@
             // 
             this.btnDangKy.Caption = "Đăng ký";
             this.btnDangKy.Id = 3;
+<<<<<<< HEAD
             this.btnDangKy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDangKy.ImageOptions.Image")));
             this.btnDangKy.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDangKy.ImageOptions.LargeImage")));
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangKy_ItemClick);
+=======
+            this.btnDangKy.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPhanQuyen.ImageOptions.Image")));
+            this.btnDangKy.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnPhanQuyen.ImageOptions.LargeImage")));
+            this.btnDangKy.Name = "btnDangKy";
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
             // 
             // skinRibbonGalleryBarItem1
             // 
@@ -212,9 +231,13 @@
             // rbPageDanhMuc
             // 
             this.rbPageDanhMuc.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+<<<<<<< HEAD
             this.ribbonPageGroup3,
             this.ribbonPageGroup5,
             this.ribbonPageGroup6});
+=======
+            this.ribbonPageGroup3});
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
             this.rbPageDanhMuc.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("rbPageDanhMuc.ImageOptions.Image")));
             this.rbPageDanhMuc.Name = "rbPageDanhMuc";
             this.rbPageDanhMuc.Text = "Danh mục";
@@ -226,6 +249,7 @@
             // 
             // ribbonStatusBar
             // 
+<<<<<<< HEAD
             this.ribbonStatusBar.Location = new System.Drawing.Point(0, 438);
             this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
@@ -269,6 +293,21 @@
             this.Controls.Add(this.ribbon);
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+=======
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 539);
+            this.ribbonStatusBar.Name = "ribbonStatusBar";
+            this.ribbonStatusBar.Ribbon = this.ribbon;
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1482, 30);
+            // 
+            // GiaDienChinh
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1482, 569);
+            this.Controls.Add(this.ribbonStatusBar);
+            this.Controls.Add(this.ribbon);
+            this.IsMdiContainer = true;
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
             this.Name = "GiaDienChinh";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
@@ -302,9 +341,12 @@
         private DevExpress.XtraBars.BarButtonItem barButtonItem3;
         private DevExpress.XtraBars.BarButtonItem btnThongTinKhangHang;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
+<<<<<<< HEAD
         private DevExpress.XtraBars.BarButtonItem btnBanHang;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.BarButtonItem btnBaoCaoCuoiNgay;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
+=======
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
     }
 }

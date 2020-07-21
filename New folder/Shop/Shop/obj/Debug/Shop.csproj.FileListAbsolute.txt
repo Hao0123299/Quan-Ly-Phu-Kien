@@ -112,6 +112,7 @@ C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\de\DevExpress.Office.v19.2.C
 C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\es\DevExpress.Office.v19.2.Core.resources.dll
 C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\ja\DevExpress.Office.v19.2.Core.resources.dll
 C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\ru\DevExpress.Office.v19.2.Core.resources.dll
+<<<<<<< HEAD
 C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\DevExpress.RichEdit.v19.2.Export.dll
 C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\DevExpress.Utils.v19.2.UI.dll
 C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\DevExpress.XtraPrinting.v19.2.dll
@@ -195,3 +196,5 @@ C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\es\DevExpress.Diagram.v19.2.
 C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\ja\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\HAO\Desktop\New folder\Shop\Shop\obj\Debug\Shop.Report.resources
+=======
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
