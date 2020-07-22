@@ -28,16 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             this.lblDangKy = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnXacNhan = new System.Windows.Forms.Button();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
+<<<<<<< HEAD
             this.lblMatKhau = new System.Windows.Forms.Label();
             this.txtTaiKhoan = new System.Windows.Forms.TextBox();
             this.lblTaiKhoan = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblNhapLaiMatKhau = new System.Windows.Forms.Label();
             this.txtNhapLaiMatKhau = new System.Windows.Forms.TextBox();
+=======
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtTaiKhoan = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             this.SuspendLayout();
             // 
             // lblDangKy
@@ -73,7 +86,10 @@
             this.btnXacNhan.TabIndex = 16;
             this.btnXacNhan.Text = "Xác nhận";
             this.btnXacNhan.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.btnXacNhan.Click += new System.EventHandler(this.btnXacNhan_Click);
+=======
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             // 
             // txtMatKhau
             // 
@@ -84,6 +100,7 @@
             this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(169, 26);
             this.txtMatKhau.TabIndex = 14;
+<<<<<<< HEAD
             this.txtMatKhau.UseSystemPasswordChar = true;
             // 
             // lblMatKhau
@@ -95,6 +112,19 @@
             this.lblMatKhau.Size = new System.Drawing.Size(75, 19);
             this.lblMatKhau.TabIndex = 15;
             this.lblMatKhau.Text = "Mật khẩu";
+=======
+            this.txtMatKhau.TextChanged += new System.EventHandler(this.txtMatKhau_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(51, 126);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 19);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Mật khẩu";
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             // 
             // txtTaiKhoan
             // 
@@ -105,6 +135,7 @@
             this.txtTaiKhoan.Size = new System.Drawing.Size(169, 26);
             this.txtTaiKhoan.TabIndex = 13;
             // 
+<<<<<<< HEAD
             // lblTaiKhoan
             // 
             this.lblTaiKhoan.AutoSize = true;
@@ -114,6 +145,17 @@
             this.lblTaiKhoan.Size = new System.Drawing.Size(76, 19);
             this.lblTaiKhoan.TabIndex = 12;
             this.lblTaiKhoan.Text = "Tài khoản";
+=======
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(51, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 19);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Tên đăng nhập";
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             // 
             // label3
             // 
@@ -125,6 +167,7 @@
             this.label3.TabIndex = 15;
             this.label3.Text = "Mật khẩu";
             // 
+<<<<<<< HEAD
             // lblNhapLaiMatKhau
             // 
             this.lblNhapLaiMatKhau.AutoSize = true;
@@ -145,6 +188,27 @@
             this.txtNhapLaiMatKhau.Size = new System.Drawing.Size(169, 26);
             this.txtNhapLaiMatKhau.TabIndex = 14;
             this.txtNhapLaiMatKhau.UseSystemPasswordChar = true;
+=======
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(51, 167);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(131, 19);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Nhập lại mật khẩu";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(186, 163);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
+            this.textBox2.Size = new System.Drawing.Size(169, 26);
+            this.textBox2.TabIndex = 14;
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             // 
             // Dangky
             // 
@@ -153,6 +217,7 @@
             this.ClientSize = new System.Drawing.Size(413, 324);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnXacNhan);
+<<<<<<< HEAD
             this.Controls.Add(this.txtNhapLaiMatKhau);
             this.Controls.Add(this.lblNhapLaiMatKhau);
             this.Controls.Add(this.label3);
@@ -160,12 +225,25 @@
             this.Controls.Add(this.lblMatKhau);
             this.Controls.Add(this.txtTaiKhoan);
             this.Controls.Add(this.lblTaiKhoan);
+=======
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtMatKhau);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtTaiKhoan);
+            this.Controls.Add(this.label1);
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             this.Controls.Add(this.lblDangKy);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Dangky";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dangky";
+<<<<<<< HEAD
+=======
+            this.Load += new System.EventHandler(this.Dangky_Load);
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,11 +255,28 @@
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnXacNhan;
         private System.Windows.Forms.TextBox txtMatKhau;
+<<<<<<< HEAD
         private System.Windows.Forms.Label lblMatKhau;
         private System.Windows.Forms.TextBox txtTaiKhoan;
         private System.Windows.Forms.Label lblTaiKhoan;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblNhapLaiMatKhau;
         private System.Windows.Forms.TextBox txtNhapLaiMatKhau;
+=======
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtTaiKhoan;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox2;
+=======
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Text = "Dangky";
+        }
+
+        #endregion
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
     }
 }

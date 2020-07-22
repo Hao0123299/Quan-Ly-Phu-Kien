@@ -117,6 +117,10 @@ C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\ja\DevExpress.XtraReports.v19
 C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\ru\DevExpress.XtraReports.v19.2.resources.dll
 C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.Report.resources
 C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.Dangky.resources
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
 C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\DevExpress.DataAccess.v19.2.UI.dll
 C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\DevExpress.Utils.v19.2.UI.dll
 C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\DevExpress.XtraCharts.v19.2.Extensions.dll
@@ -200,3 +204,8 @@ C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\ja\DevExpress.Diagram.v19.2.C
 C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.XtraForm1.resources
 C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.XtraReport1.resources
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5

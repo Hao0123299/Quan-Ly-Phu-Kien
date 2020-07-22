@@ -41,11 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="DangkyDAO.cs" />
     <Compile Include="DangnhapDAO.cs" />
     <Compile Include="DataProViDer.cs" />
     <Compile Include="HanghoaDAO.cs" />
     <Compile Include="KhachhangDAO.cs" />
+=======
+    <Compile Include="DangnhapDAO.cs" />
+    <Compile Include="DataProViDer.cs" />
+    <Compile Include="HanghoaDAO.cs" />
+<<<<<<< HEAD
+    <Compile Include="KhachhangDAO.cs" />
+=======
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
     <Compile Include="NhanvienDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

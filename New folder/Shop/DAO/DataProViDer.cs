@@ -33,7 +33,14 @@ namespace DAO
         private string connectionStr = @"Data Source=DESKTOP-91UK9PN\SQLEXPRESS;Initial Catalog=SHOP;Integrated Security=True";
 
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
         //thêm dử liệu
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {

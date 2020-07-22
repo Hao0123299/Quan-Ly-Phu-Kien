@@ -61,8 +61,29 @@ namespace GUI
                 MessageBox.Show("Thêm hàng thất bại");
             }
         }
+<<<<<<< HEAD
   
          private void btnXoa_Click(object sender, EventArgs e)
+=======
+<<<<<<< HEAD
+  
+         private void btnXoa_Click(object sender, EventArgs e)
+=======
+
+        private void dtgvDS_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int i;
+            i = dtgvDS.CurrentRow.Index;
+            txtMa.Text = dtgvDS.Rows[i].Cells[0].Value.ToString();
+            txtTen.Text = dtgvDS.Rows[i].Cells[1].Value.ToString();
+            txtDonGia.Text = dtgvDS.Rows[i].Cells[2].Value.ToString();
+            txtDonViTinh.Text = dtgvDS.Rows[i].Cells[3].Value.ToString();
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
         {
             string MASP = txtMa.Text;
             string TENSP = txtTen.Text;
@@ -80,6 +101,10 @@ namespace GUI
             }
 
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
 
         //click vào datagriview hien chi tiet
         int index;
@@ -93,9 +118,15 @@ namespace GUI
             txtDonGia.Text = dtgvDS.Rows[index].Cells[3].Value.ToString();
         }
 
+<<<<<<< HEAD
         private void HangHoa_Load(object sender, EventArgs e)
         {
 
         }
+=======
+      
+=======
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
     }
 }

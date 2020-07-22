@@ -343,7 +343,14 @@
             // 
             // TopMargin
             // 
+<<<<<<< HEAD
             this.TopMargin.HeightF = 54.16667F;
+=======
+<<<<<<< HEAD
+            this.TopMargin.HeightF = 54.16667F;
+=======
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -356,7 +363,15 @@
             // 
             // pageInfo1
             // 
+<<<<<<< HEAD
             this.pageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 131F);
+=======
+<<<<<<< HEAD
+            this.pageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 131F);
+=======
+            this.pageInfo1.LocationFloat = new DevExpress.Utils.PointFloat(5F, 5F);
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             this.pageInfo1.Name = "pageInfo1";
             this.pageInfo1.PageInfo = DevExpress.XtraPrinting.PageInfo.DateTime;
             this.pageInfo1.SizeF = new System.Drawing.SizeF(315F, 23F);
@@ -364,7 +379,15 @@
             // 
             // pageInfo2
             // 
+<<<<<<< HEAD
             this.pageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(315F, 131F);
+=======
+<<<<<<< HEAD
+            this.pageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(315F, 131F);
+=======
+            this.pageInfo2.LocationFloat = new DevExpress.Utils.PointFloat(330F, 5F);
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             this.pageInfo2.Name = "pageInfo2";
             this.pageInfo2.SizeF = new System.Drawing.SizeF(315F, 23F);
             this.pageInfo2.StyleName = "PageInfo";
@@ -375,7 +398,14 @@
             // 
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.label1});
+<<<<<<< HEAD
             this.ReportHeader.Expanded = false;
+=======
+<<<<<<< HEAD
+            this.ReportHeader.Expanded = false;
+=======
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             this.ReportHeader.HeightF = 60F;
             this.ReportHeader.Name = "ReportHeader";
             // 
@@ -385,7 +415,15 @@
             this.label1.Name = "label1";
             this.label1.SizeF = new System.Drawing.SizeF(640F, 24.19433F);
             this.label1.StyleName = "Title";
+<<<<<<< HEAD
             this.label1.Text = "Báo cáo cuối ngày";
+=======
+<<<<<<< HEAD
+            this.label1.Text = "Báo cáo cuối ngày";
+=======
+            this.label1.Text = "Report Title";
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             // 
             // GroupHeader1
             // 
@@ -520,7 +558,15 @@
             this.DataMember = "HOADON";
             this.DataSource = this.sqlDataSource1;
             this.Font = new System.Drawing.Font("Arial", 9.75F);
+<<<<<<< HEAD
             this.Margins = new System.Drawing.Printing.Margins(100, 100, 54, 164);
+=======
+<<<<<<< HEAD
+            this.Margins = new System.Drawing.Printing.Margins(100, 100, 54, 164);
+=======
+            this.Margins = new System.Drawing.Printing.Margins(100, 28, 100, 164);
+>>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.Title,
             this.DetailCaption1,

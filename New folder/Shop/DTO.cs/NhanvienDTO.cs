@@ -36,7 +36,12 @@ namespace DTO.cs
             get => CMND;
             set => CMND = value;
         }
+<<<<<<< HEAD
        
+=======
+
+        
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
         public NhanvienDTO (string MANV, string HOTEN, string SODT, string CMND)
         {
             this.MANV = MANV;
@@ -51,6 +56,16 @@ namespace DTO.cs
             this.HOTEN = row["HOTEN"].ToString();
             this.SODT = row["SODT"].ToString();
             this.CMND = row["CMND"].ToString();
+<<<<<<< HEAD
         }     
+=======
+        }
+
+        
+
+        
+
+        
+>>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
     }
 }
