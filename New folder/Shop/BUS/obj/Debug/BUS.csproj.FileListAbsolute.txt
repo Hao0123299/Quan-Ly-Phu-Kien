@@ -1,0 +1,11 @@
+C:\Users\HAO\Desktop\New folder\Shop\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+C:\Users\HAO\Desktop\New folder\Shop\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\HAO\Desktop\New folder\Shop\BUS\bin\Debug\BUS.dll
+C:\Users\HAO\Desktop\New folder\Shop\BUS\bin\Debug\BUS.pdb
+C:\Users\HAO\Desktop\New folder\Shop\BUS\bin\Debug\DAO.dll
+C:\Users\HAO\Desktop\New folder\Shop\BUS\bin\Debug\DTO.cs.dll
+C:\Users\HAO\Desktop\New folder\Shop\BUS\bin\Debug\DAO.pdb
+C:\Users\HAO\Desktop\New folder\Shop\BUS\bin\Debug\DTO.cs.pdb
+C:\Users\HAO\Desktop\New folder\Shop\BUS\obj\Debug\BUS.csproj.CopyComplete
+C:\Users\HAO\Desktop\New folder\Shop\BUS\obj\Debug\BUS.dll
+C:\Users\HAO\Desktop\New folder\Shop\BUS\obj\Debug\BUS.pdb
