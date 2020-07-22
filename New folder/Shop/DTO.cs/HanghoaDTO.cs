@@ -4,14 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-<<<<<<< HEAD
 using DTO;
-=======
-<<<<<<< HEAD
-using DTO;
-=======
->>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
 
 namespace DTO
 {

@@ -48,10 +48,6 @@ namespace GUI
             kh.Show();
         }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
         private void btnDangKy_ItemClick(object sender, ItemClickEventArgs e)
         {
             Dangky dk = new Dangky();
@@ -70,16 +66,5 @@ namespace GUI
         {
           
         }
-<<<<<<< HEAD
-=======
-=======
-        /* private void btnThongTinChiTietNhanVien_ItemClick(object sender, ItemClickEventArgs e)
-         {
-             NhanVien nv = new NhanVien();
-             nv.MdiParent = this;
-             nv.Show();
-         }*/
->>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
     }
 }

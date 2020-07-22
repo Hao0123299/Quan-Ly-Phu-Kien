@@ -18,15 +18,7 @@ CREATE TABLE NHANVIEN(
 	MANV	char(4) not null,	
 	HOTEN	varchar(40),
 	SODT	varchar(20),
-<<<<<<< HEAD
 	CMND 	NUMERIC(18,0)
-=======
-<<<<<<< HEAD
-	CMND 	NUMERIC(18,0)
-=======
-	NGVL	smalldatetime	
->>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
 	constraint pk_nv primary key(MANV)
 )
 ---------------------------------------------
@@ -48,18 +40,9 @@ CREATE TABLE HOADON(
 	constraint pk_hd primary key(SOHD)
 )
 ---------------------------------------------
-<<<<<<< HEAD
 --Đôi tác
 CREATE TABLE DoiTac(
 	
-=======
-<<<<<<< HEAD
---Đôi tác
-CREATE TABLE DoiTac(
-	
-=======
->>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
 -- CTHD
    CREATE TABLE CTHD(
 	SOHD	int,

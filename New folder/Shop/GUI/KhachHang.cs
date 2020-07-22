@@ -18,26 +18,8 @@ namespace GUI
             InitializeComponent();
         }
 
-<<<<<<< HEAD
      
 
        
-=======
-<<<<<<< HEAD
-     
-
-       
-=======
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
->>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
     }
 }

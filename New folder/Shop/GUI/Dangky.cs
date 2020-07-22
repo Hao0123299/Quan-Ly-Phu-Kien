@@ -8,11 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-<<<<<<< HEAD
 using DAO;
-=======
-
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
 namespace GUI
 {
     public partial class Dangky : DevExpress.XtraEditors.XtraForm
@@ -21,7 +17,6 @@ namespace GUI
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
@@ -55,20 +50,5 @@ namespace GUI
                 MessageBox.Show("Đăng ký nhân viên thành công");
             }
         }
-=======
-<<<<<<< HEAD
-
-        private void Dangky_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMatKhau_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-=======
->>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
     }
 }

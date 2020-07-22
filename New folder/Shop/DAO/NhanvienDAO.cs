@@ -27,17 +27,8 @@ namespace DAO
         {
             List<NhanvienDTO> nhanvien = new List<NhanvienDTO>();
 
-<<<<<<< HEAD
         
             string query = "select MANV , HOTEN  , SODT , CMND from NHANVIEN";
-=======
-<<<<<<< HEAD
-        
-            string query = "select MANV , HOTEN  , SODT , CMND from NHANVIEN";
-=======
-            string query = "select * from NHANVIEN";
->>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
 
             DataTable data = DataProVider.Instance.ExecuteQuery(query);
 
@@ -58,64 +49,25 @@ namespace DAO
             return nhanvien;
         }
 
-<<<<<<< HEAD
        public bool SuaNhanVien(string MANV, string HOTEN, string SODT, string CMND )
         {
             string query = " UPDATE dbo.NHANVIEN SET  HOTEN  = '" + HOTEN + "' , SODT = '" + SODT +"' , CMND = '" + CMND + "'  WHERE MANV = '" + MANV +"'" ;
-=======
-<<<<<<< HEAD
-       public bool SuaNhanVien(string MANV, string HOTEN, string SODT, string CMND )
-        {
-            string query = " UPDATE dbo.NHANVIEN SET  HOTEN  = '" + HOTEN + "' , SODT = '" + SODT +"' , CMND = '" + CMND + "'  WHERE MANV = '" + MANV +"'" ;
-=======
-        /*public bool Sua(string MASP, string TENSP, string DVT, string GIA)
-        {
-            string query = " UPDATE dbo.SANPHAM SET TENSP = '" + TENSP + "' , DVT = '" + DVT + "' , GIA = '" + GIA + "'  WHERE MASP = MASP";
->>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
             int result = DataProVider.Instance.ExecuteNonQuery(query);
             return result > 0;
         }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
         public bool ThemNhanVien(string MANV, string HOTEN, string SODT, string CMND)
         {
 
             string query = "INSERT INTO dbo.NHANVIEN ( MANV, HOTEN, SODT, CMND ) " +
                     "VALUES  ( '" + MANV + "' , N'" + HOTEN + "' , '" + SODT + "' , " + CMND + ")";
-<<<<<<< HEAD
-=======
-=======
-        public bool Them(string MASP, string TENSP, string DVT, string GIA)
-        {
-            // string query = "INSERT dbo.SANPHAM (MASP, TENSP, DVT, GIA) VALUES(N'Ma01'"
-            //string query = "INSERT INTO dbo.SANPHAM ( MASP, TENSP, DVT, GIA ) VALUES  ( '', N'', '', '')";
-
-            string query = "INSERT INTO dbo.SANPHAM ( MASP, TENSP, DVT, GIA ) " +
-                    "VALUES  ( '" + MASP + "', N'" + TENSP + "','" + DVT + "', " + GIA + ")";
-
-
-            //int result = DataProVider.Instance.ExecuteNonQuery(query, new object[] { MASP , TENSP, DVT,GIA });
->>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
 
             int result = DataProVider.Instance.ExecuteNonQuery(query);
 
             return result > 0;
         }
 
-<<<<<<< HEAD
        /* public HangHoa GetHangHoa(string MASP)
-=======
-<<<<<<< HEAD
-       /* public HangHoa GetHangHoa(string MASP)
-=======
-        public HangHoa GetHangHoa(string MASP)
->>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
         {
             DataTable data = DataProVider.Instance.ExecuteQuery("select * from Account where TaiKhoan ='" + MASP + "'");
 
@@ -124,10 +76,6 @@ namespace DAO
                 return new HangHoa(item);
             }
             return null;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
         }*/
 
         public bool XoaNhanVien(string MANV)
@@ -137,20 +85,6 @@ namespace DAO
 
             return result > 0;
         }
-<<<<<<< HEAD
-=======
-=======
-        }
-
-        public bool Xoa(string MASP)
-        {
-            string query = "DELETE dbo.SANPHAM WHERE MASP =  '" + MASP + "'";
-            int result = DataProVider.Instance.ExecuteNonQuery(query);
-
-            return result > 0;
-        }*/
->>>>>>> 08c170dcfdb7a1df82c6fb0c3a0fcfb6d1affc6f
->>>>>>> 6ead9ff9b40c86cacbff09c7f9a41abb9cd196c5
     }
 }
 
