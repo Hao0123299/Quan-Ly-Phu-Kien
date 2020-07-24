@@ -32,24 +32,31 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtgvDS = new System.Windows.Forms.DataGridView();
+            this.mASPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tENSPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dVTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gIADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sANPHAMBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sHOP2DataSet = new GUI.SHOP2DataSet();
             this.sHOPDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-           
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.groupBoxHangHoa = new System.Windows.Forms.GroupBox();
-            this.txtDonGia = new System.Windows.Forms.TextBox();
+            this.txtDonViTinh = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblDonGia = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtDonViTinh = new System.Windows.Forms.TextBox();
+            this.txtDonGia = new System.Windows.Forms.TextBox();
             this.txtTen = new System.Windows.Forms.TextBox();
             this.txtMa = new System.Windows.Forms.TextBox();
             this.btnXem = new System.Windows.Forms.Button();
+            this.sANPHAMTableAdapter = new GUI.SHOP2DataSetTableAdapters.SANPHAMTableAdapter();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sANPHAMBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sHOP2DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSetBindingSource)).BeginInit();
-    
             this.groupBoxHangHoa.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,24 +93,54 @@
             this.dtgvDS.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtgvDS.AutoGenerateColumns = false;
             this.dtgvDS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvDS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvDS.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mASPDataGridViewTextBoxColumn,
+            this.tENSPDataGridViewTextBoxColumn,
+            this.dVTDataGridViewTextBoxColumn,
+            this.gIADataGridViewTextBoxColumn});
+            this.dtgvDS.DataSource = this.sANPHAMBindingSource;
             this.dtgvDS.Location = new System.Drawing.Point(6, 18);
             this.dtgvDS.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvDS.Name = "dtgvDS";
             this.dtgvDS.Size = new System.Drawing.Size(879, 250);
             this.dtgvDS.TabIndex = 1;
-            this.dtgvDS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDS_CellClick);
-            this.dtgvDS.Click += new System.EventHandler(this.dtgvDS_Click);
             // 
-            // sHOPDataSetBindingSource
+            // mASPDataGridViewTextBoxColumn
             // 
-
-            this.sHOPDataSetBindingSource.Position = 0;
+            this.mASPDataGridViewTextBoxColumn.DataPropertyName = "MASP";
+            this.mASPDataGridViewTextBoxColumn.HeaderText = "Mã sản phẩm";
+            this.mASPDataGridViewTextBoxColumn.Name = "mASPDataGridViewTextBoxColumn";
             // 
-            // sHOPDataSet
+            // tENSPDataGridViewTextBoxColumn
             // 
-
+            this.tENSPDataGridViewTextBoxColumn.DataPropertyName = "TENSP";
+            this.tENSPDataGridViewTextBoxColumn.HeaderText = "Tên sản phẩm";
+            this.tENSPDataGridViewTextBoxColumn.Name = "tENSPDataGridViewTextBoxColumn";
+            // 
+            // dVTDataGridViewTextBoxColumn
+            // 
+            this.dVTDataGridViewTextBoxColumn.DataPropertyName = "DVT";
+            this.dVTDataGridViewTextBoxColumn.HeaderText = "Đơn vị tính";
+            this.dVTDataGridViewTextBoxColumn.Name = "dVTDataGridViewTextBoxColumn";
+            // 
+            // gIADataGridViewTextBoxColumn
+            // 
+            this.gIADataGridViewTextBoxColumn.DataPropertyName = "GIA";
+            this.gIADataGridViewTextBoxColumn.HeaderText = "Giá";
+            this.gIADataGridViewTextBoxColumn.Name = "gIADataGridViewTextBoxColumn";
+            // 
+            // sANPHAMBindingSource
+            // 
+            this.sANPHAMBindingSource.DataMember = "SANPHAM";
+            this.sANPHAMBindingSource.DataSource = this.sHOP2DataSet;
+            // 
+            // sHOP2DataSet
+            // 
+            this.sHOP2DataSet.DataSetName = "SHOP2DataSet";
+            this.sHOP2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnSua
             // 
@@ -135,12 +172,12 @@
             // 
             this.groupBoxHangHoa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxHangHoa.Controls.Add(this.txtDonGia);
+            this.groupBoxHangHoa.Controls.Add(this.txtDonViTinh);
             this.groupBoxHangHoa.Controls.Add(this.label4);
             this.groupBoxHangHoa.Controls.Add(this.lblDonGia);
             this.groupBoxHangHoa.Controls.Add(this.label3);
             this.groupBoxHangHoa.Controls.Add(this.label1);
-            this.groupBoxHangHoa.Controls.Add(this.txtDonViTinh);
+            this.groupBoxHangHoa.Controls.Add(this.txtDonGia);
             this.groupBoxHangHoa.Controls.Add(this.txtTen);
             this.groupBoxHangHoa.Controls.Add(this.txtMa);
             this.groupBoxHangHoa.Location = new System.Drawing.Point(10, 10);
@@ -152,15 +189,16 @@
             this.groupBoxHangHoa.TabStop = false;
             this.groupBoxHangHoa.Text = "Hàng hóa";
             // 
-            // txtDonGia
+            // txtDonViTinh
             // 
-            this.txtDonGia.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtDonGia.Location = new System.Drawing.Point(223, 53);
-            this.txtDonGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDonGia.MaxLength = 50;
-            this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(114, 21);
-            this.txtDonGia.TabIndex = 12;
+            this.txtDonViTinh.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtDonViTinh.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sANPHAMBindingSource, "DVT", true));
+            this.txtDonViTinh.Location = new System.Drawing.Point(223, 53);
+            this.txtDonViTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDonViTinh.MaxLength = 50;
+            this.txtDonViTinh.Name = "txtDonViTinh";
+            this.txtDonViTinh.Size = new System.Drawing.Size(114, 21);
+            this.txtDonViTinh.TabIndex = 12;
             // 
             // label4
             // 
@@ -202,19 +240,21 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Mã hàng hóa";
             // 
-            // txtDonViTinh
+            // txtDonGia
             // 
-            this.txtDonViTinh.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtDonViTinh.Location = new System.Drawing.Point(525, 50);
-            this.txtDonViTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtDonViTinh.MaxLength = 50;
-            this.txtDonViTinh.Name = "txtDonViTinh";
-            this.txtDonViTinh.Size = new System.Drawing.Size(220, 21);
-            this.txtDonViTinh.TabIndex = 4;
+            this.txtDonGia.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtDonGia.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sANPHAMBindingSource, "GIA", true));
+            this.txtDonGia.Location = new System.Drawing.Point(525, 50);
+            this.txtDonGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDonGia.MaxLength = 50;
+            this.txtDonGia.Name = "txtDonGia";
+            this.txtDonGia.Size = new System.Drawing.Size(220, 21);
+            this.txtDonGia.TabIndex = 4;
             // 
             // txtTen
             // 
             this.txtTen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTen.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sANPHAMBindingSource, "TENSP", true));
             this.txtTen.Location = new System.Drawing.Point(525, 25);
             this.txtTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTen.MaxLength = 30;
@@ -225,6 +265,7 @@
             // txtMa
             // 
             this.txtMa.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtMa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sANPHAMBindingSource, "MASP", true));
             this.txtMa.Location = new System.Drawing.Point(223, 28);
             this.txtMa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMa.MaxLength = 10;
@@ -245,6 +286,10 @@
             this.btnXem.UseVisualStyleBackColor = true;
             this.btnXem.Click += new System.EventHandler(this.btnXem_Click);
             // 
+            // sANPHAMTableAdapter
+            // 
+            this.sANPHAMTableAdapter.ClearBeforeFill = true;
+            // 
             // HangHoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,10 +304,12 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "HangHoa";
             this.Text = "Hàng hóa";
+            this.Load += new System.EventHandler(this.HangHoa_Load);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sANPHAMBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sHOP2DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSetBindingSource)).EndInit();
-
             this.groupBoxHangHoa.ResumeLayout(false);
             this.groupBoxHangHoa.PerformLayout();
             this.ResumeLayout(false);
@@ -276,16 +323,22 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.GroupBox groupBoxHangHoa;
-        private System.Windows.Forms.TextBox txtDonGia;
+        private System.Windows.Forms.TextBox txtDonViTinh;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblDonGia;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDonViTinh;
+        private System.Windows.Forms.TextBox txtDonGia;
         private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.TextBox txtMa;
         private System.Windows.Forms.Button btnXem;
         private System.Windows.Forms.BindingSource sHOPDataSetBindingSource;
-     
+        private SHOP2DataSet sHOP2DataSet;
+        private System.Windows.Forms.BindingSource sANPHAMBindingSource;
+        private SHOP2DataSetTableAdapters.SANPHAMTableAdapter sANPHAMTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mASPDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tENSPDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dVTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gIADataGridViewTextBoxColumn;
     }
 }

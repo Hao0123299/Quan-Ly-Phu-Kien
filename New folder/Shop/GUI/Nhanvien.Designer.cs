@@ -40,7 +40,6 @@
             this.lblMa = new System.Windows.Forms.Label();
             this.groupBoxThongTinChiTiet = new System.Windows.Forms.GroupBox();
             this.dtgvThongTin = new System.Windows.Forms.DataGridView();
-          
             this.btnXem = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -49,14 +48,22 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.sHOPDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sHOP2DataSet1 = new GUI.SHOP2DataSet1();
+            this.nHANVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.nHANVIENTableAdapter = new GUI.SHOP2DataSet1TableAdapters.NHANVIENTableAdapter();
+            this.mANVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hOTENDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sODTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cMNDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxThongTinNhanVien.SuspendLayout();
             this.groupBoxThongTinChiTiet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTin)).BeginInit();
-        
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sHOP2DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxThongTinNhanVien
@@ -83,6 +90,7 @@
             // txtCMND
             // 
             this.txtCMND.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtCMND.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nHANVIENBindingSource, "CMND", true));
             this.txtCMND.Location = new System.Drawing.Point(786, 31);
             this.txtCMND.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCMND.Name = "txtCMND";
@@ -102,6 +110,7 @@
             // txtSoDT
             // 
             this.txtSoDT.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtSoDT.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nHANVIENBindingSource, "SODT", true));
             this.txtSoDT.Location = new System.Drawing.Point(549, 31);
             this.txtSoDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoDT.Name = "txtSoDT";
@@ -121,6 +130,7 @@
             // txtHoTen
             // 
             this.txtHoTen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtHoTen.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nHANVIENBindingSource, "HOTEN", true));
             this.txtHoTen.Location = new System.Drawing.Point(309, 31);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHoTen.Name = "txtHoTen";
@@ -140,6 +150,7 @@
             // txtMa
             // 
             this.txtMa.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtMa.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.nHANVIENBindingSource, "MANV", true));
             this.txtMa.Location = new System.Drawing.Point(101, 31);
             this.txtMa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMa.Name = "txtMa";
@@ -176,18 +187,22 @@
             this.dtgvThongTin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dtgvThongTin.AutoGenerateColumns = false;
             this.dtgvThongTin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvThongTin.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mANVDataGridViewTextBoxColumn,
+            this.hOTENDataGridViewTextBoxColumn,
+            this.sODTDataGridViewTextBoxColumn,
+            this.cMNDDataGridViewTextBoxColumn});
+            this.dtgvThongTin.DataSource = this.nHANVIENBindingSource;
             this.dtgvThongTin.Location = new System.Drawing.Point(6, 20);
             this.dtgvThongTin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtgvThongTin.Name = "dtgvThongTin";
             this.dtgvThongTin.RowTemplate.Height = 24;
             this.dtgvThongTin.Size = new System.Drawing.Size(993, 291);
             this.dtgvThongTin.TabIndex = 0;
-            this.dtgvThongTin.Click += new System.EventHandler(this.dtgvThongTin_Click);
+         
             // 
-            // sHOPDataSet
-            // 
-           
             // btnXem
             // 
             this.btnXem.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -276,8 +291,44 @@
             // sHOPDataSetBindingSource
             // 
             this.sHOPDataSetBindingSource.AllowNew = true;
-
-            this.sHOPDataSetBindingSource.Position = 0;
+            // 
+            // sHOP2DataSet1
+            // 
+            this.sHOP2DataSet1.DataSetName = "SHOP2DataSet1";
+            this.sHOP2DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // nHANVIENBindingSource
+            // 
+            this.nHANVIENBindingSource.DataMember = "NHANVIEN";
+            this.nHANVIENBindingSource.DataSource = this.sHOP2DataSet1;
+            // 
+            // nHANVIENTableAdapter
+            // 
+            this.nHANVIENTableAdapter.ClearBeforeFill = true;
+            // 
+            // mANVDataGridViewTextBoxColumn
+            // 
+            this.mANVDataGridViewTextBoxColumn.DataPropertyName = "MANV";
+            this.mANVDataGridViewTextBoxColumn.HeaderText = "Mã nhân viên";
+            this.mANVDataGridViewTextBoxColumn.Name = "mANVDataGridViewTextBoxColumn";
+            // 
+            // hOTENDataGridViewTextBoxColumn
+            // 
+            this.hOTENDataGridViewTextBoxColumn.DataPropertyName = "HOTEN";
+            this.hOTENDataGridViewTextBoxColumn.HeaderText = "Họ tên";
+            this.hOTENDataGridViewTextBoxColumn.Name = "hOTENDataGridViewTextBoxColumn";
+            // 
+            // sODTDataGridViewTextBoxColumn
+            // 
+            this.sODTDataGridViewTextBoxColumn.DataPropertyName = "SODT";
+            this.sODTDataGridViewTextBoxColumn.HeaderText = "Số điện thoai";
+            this.sODTDataGridViewTextBoxColumn.Name = "sODTDataGridViewTextBoxColumn";
+            // 
+            // cMNDDataGridViewTextBoxColumn
+            // 
+            this.cMNDDataGridViewTextBoxColumn.DataPropertyName = "CMND";
+            this.cMNDDataGridViewTextBoxColumn.HeaderText = "Chứng minh nhân dân";
+            this.cMNDDataGridViewTextBoxColumn.Name = "cMNDDataGridViewTextBoxColumn";
             // 
             // Nhanvien
             // 
@@ -290,14 +341,17 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Nhanvien";
             this.Text = "Nhân viên";
+            this.Load += new System.EventHandler(this.Nhanvien_Load);
             this.groupBoxThongTinNhanVien.ResumeLayout(false);
             this.groupBoxThongTinNhanVien.PerformLayout();
             this.groupBoxThongTinChiTiet.ResumeLayout(false);
-           
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTin)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sHOP2DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nHANVIENBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -324,5 +378,12 @@
         private System.Windows.Forms.DataGridView dtgvThongTin;
        
         public System.Windows.Forms.BindingSource sHOPDataSetBindingSource;
+        private SHOP2DataSet1 sHOP2DataSet1;
+        private System.Windows.Forms.BindingSource nHANVIENBindingSource;
+        private SHOP2DataSet1TableAdapters.NHANVIENTableAdapter nHANVIENTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mANVDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hOTENDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sODTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cMNDDataGridViewTextBoxColumn;
     }
 }

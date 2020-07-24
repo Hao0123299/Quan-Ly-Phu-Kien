@@ -39,7 +39,6 @@ C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\ru\DevExpress.Sparkline.v19.2
 C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.csprojAssemblyReference.cache
 C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.HangHoa.resources
 C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.HoaDon.resources
-C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.KhachHang.resources
 C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
 C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
 C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.csproj.CopyComplete

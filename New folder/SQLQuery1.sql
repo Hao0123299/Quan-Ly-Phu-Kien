@@ -105,3 +105,4 @@ select * from dbo.Account where TaiKhoan = N'admin' AND MatKhau = N'admin'
 	          )
 --
 ALTER TABLE  Account ADD NhapLaiMatKhau NVARCHAR(250)
+ALTER TABLE dbo.HOADON ADD SL NVARCHAR(10)

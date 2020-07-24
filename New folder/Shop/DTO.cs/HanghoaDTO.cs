@@ -44,15 +44,17 @@ namespace DTO
         {
             this.MASP = MASP;
             this.TENSP = TENSP;
-            this.GIA = GIA;
             this.DVT = DVT;
+            this.GIA = GIA;
+            
         }
         public HangHoa(DataRow row)
         {
             this.MASP = row["MASP"].ToString();
             this.TENSP = row["TENSP"].ToString();
-            this.GIA = row["GIA"].ToString();
             this.DVT = row["DVT"].ToString();
+            this.GIA = row["GIA"].ToString();
+            
         }
     }
 }

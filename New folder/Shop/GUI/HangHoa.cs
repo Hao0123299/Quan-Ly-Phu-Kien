@@ -22,21 +22,22 @@ namespace GUI
 
         private void btnXem_Click(object sender, EventArgs e)
         {
-            HangHoaBUS.Instance.Xem(dtgvDS);
+            //HangHoaBUS.Instance.Xem(dtgvDS);
+            HangHoa_Load( sender, e);
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
             string MASP = txtMa.Text;
             string TENSP = txtTen.Text;
-            string GIA = txtDonGia.Text;
             string DVT = txtDonViTinh.Text;
+            string GIA = txtDonGia.Text;
 
 
             if (HanghoaDAO.Instance.Sua(MASP, TENSP, DVT, GIA))
             {
                 MessageBox.Show("Sửa hàng thành công");
-                HangHoaBUS.Instance.Xem(dtgvDS);
+                HangHoa_Load(sender, e);
             }
             else
             {
@@ -50,19 +51,19 @@ namespace GUI
             string TENSP = txtTen.Text;
             string DVT = txtDonViTinh.Text;
             string GIA = txtDonGia.Text;
-           
+
             if (HanghoaDAO.Instance.Them(MASP , TENSP , DVT , GIA))
             {
                 MessageBox.Show("Thêm hàng thành công");
-                HangHoaBUS.Instance.Xem(dtgvDS);
+                HangHoa_Load(sender, e);
             }
             else
             {
                 MessageBox.Show("Thêm hàng thất bại");
             }
         }
-  
-         private void btnXoa_Click(object sender, EventArgs e)
+
+        private void btnXoa_Click(object sender, EventArgs e)
         {
             string MASP = txtMa.Text;
             string TENSP = txtTen.Text;
@@ -72,7 +73,7 @@ namespace GUI
             if (HanghoaDAO.Instance.Xoa(MASP))
             {
                 MessageBox.Show("Xóa hàng thành công");
-                HangHoaBUS.Instance.Xem(dtgvDS);
+                HangHoa_Load(sender, e);
             }
             else
             {
@@ -81,26 +82,11 @@ namespace GUI
 
         }
 
-        //click vào datagriview hien chi tiet
-        int index;
-        private void dtgvDS_Click(object sender, EventArgs e)
+        private void HangHoa_Load(object sender, EventArgs e)
         {
-            index = dtgvDS.CurrentRow.Index;
+            // TODO: This line of code loads data into the 'sHOP2DataSet.SANPHAM' table. You can move, or remove it, as needed.
+            this.sANPHAMTableAdapter.Fill(this.sHOP2DataSet.SANPHAM);
 
-            txtMa.Text = dtgvDS.Rows[index].Cells[0].Value.ToString();
-            txtTen.Text = dtgvDS.Rows[index].Cells[1].Value.ToString();
-            txtDonViTinh.Text = dtgvDS.Rows[index].Cells[3].Value.ToString();
-            txtDonGia.Text = dtgvDS.Rows[index].Cells[2].Value.ToString();
-        }
-
-   
-
-        private void dtgvDS_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            dtgvDS.Columns[0].HeaderText = "Mã sản phẩm";
-            dtgvDS.Columns[1].HeaderText = "Tên sản phẩm";
-            dtgvDS.Columns[2].HeaderText = "Đơn vị tính";
-            dtgvDS.Columns[3].HeaderText = "Giá sản phẩm";
         }
     }
 }

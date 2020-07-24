@@ -108,12 +108,6 @@
     <Compile Include="HoaDon.Designer.cs">
       <DependentUpon>HoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="KhachHang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="KhachHang.Designer.cs">
-      <DependentUpon>KhachHang.cs</DependentUpon>
-    </Compile>
     <Compile Include="Nhanvien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +125,36 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SHOP2DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHOP2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SHOP2DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHOP2DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SHOP2DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHOP2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SHOP2DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHOP2DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SHOP2DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHOP2DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SHOP2DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SHOP2DataSet5.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Dangky.resx">
@@ -147,9 +171,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HoaDon.resx">
       <DependentUpon>HoaDon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="KhachHang.resx">
-      <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Nhanvien.resx">
       <DependentUpon>Nhanvien.cs</DependentUpon>
@@ -179,6 +200,72 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SHOP2DataSet.xsc">
+      <DependentUpon>SHOP2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SHOP2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHOP2DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHOP2DataSet.xss">
+      <DependentUpon>SHOP2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SHOP2DataSet1.xsc">
+      <DependentUpon>SHOP2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SHOP2DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHOP2DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHOP2DataSet1.xss">
+      <DependentUpon>SHOP2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SHOP2DataSet2.xsc">
+      <DependentUpon>SHOP2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SHOP2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHOP2DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHOP2DataSet2.xss">
+      <DependentUpon>SHOP2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SHOP2DataSet3.xsc">
+      <DependentUpon>SHOP2DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SHOP2DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHOP2DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHOP2DataSet3.xss">
+      <DependentUpon>SHOP2DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="SHOP2DataSet4.xsc">
+      <DependentUpon>SHOP2DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SHOP2DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHOP2DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHOP2DataSet4.xss">
+      <DependentUpon>SHOP2DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="SHOP2DataSet5.xsc">
+      <DependentUpon>SHOP2DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="SHOP2DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SHOP2DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SHOP2DataSet5.xss">
+      <DependentUpon>SHOP2DataSet5.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

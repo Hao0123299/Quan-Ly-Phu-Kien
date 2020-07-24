@@ -41,12 +41,7 @@ namespace GUI
             nv.Show();
         }
 
-        private void btnThongTinKhangHang_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            KhachHang kh = new KhachHang();
-            kh.MdiParent = this;
-            kh.Show();
-        }
+        
 
         private void btnDangKy_ItemClick(object sender, ItemClickEventArgs e)
         {

@@ -51,9 +51,9 @@ namespace DAO
 
         public bool ThemChiTietHoaDon(string SOHD, string MASP, string SL)
         {
-            //INSERT INTO dbo.CTHD ( SOHD, MASP, SL )VALUES  ( 1,'M13', 0 )
-            string query = "INSERT INTO dbo.CTHD( SOHD, MASP, NGHD , SOLUONG ) " +
-                    "VALUES  ( '" + SOHD + "' , N'" + MASP + "' , '" + SL + "')";
+           // INSERT INTO dbo.CTHD(SOHD, MASP, SL) VALUES('3', N'M13 ', '10')
+            string query = "INSERT INTO dbo.CTHD( SOHD, MASP , SL ) " +
+                    "VALUES  ( '" + SOHD + "' , '" + MASP + "' , '" + SL + "')";
 
              int result = DataProVider.Instance.ExecuteNonQuery(query);
 

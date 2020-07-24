@@ -40,7 +40,7 @@ namespace GUI
 
             if(HoadonDAO.Instance.ThemHoaDon(SOHD, MANV, SL))
             {
-                MessageBox.Show("Thêm thong tin thành công");
+                MessageBox.Show("Thêm thông tin thành công");
                 HoadonBUS.Instance.Xem(dtgvDSHD1);
             }
             else
@@ -66,27 +66,14 @@ namespace GUI
                 MessageBox.Show("Thất bại, vui lòng kiểm tra lại");
             }
         }
-        //click vao datagriview hien text chi tiet hoa don
-        
-        private void dtgvDSHH_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int index;
-            index = dtgvDSHH.CurrentRow.Index;
-            txtHoaDon.Text = dtgvDSHH.Rows[index].Cells[0].Value.ToString();
-            txtMaSP.Text = dtgvDSHH.Rows[index].Cells[1].Value.ToString();
-            txtSL.Text = dtgvDSHH.Rows[index].Cells[2].Value.ToString();
-        }
 
-        //click vào datagriview hien chi tiet thong tin hóa don
-
-        private void dtgvDSHD1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void HoaDon_Load(object sender, EventArgs e)
         {
-            int index;
-            index = dtgvDSHD1.CurrentRow.Index;
-            txtSoHoaDon.Text = dtgvDSHD1.Rows[index].Cells[0].Value.ToString();
-            txtNhanVien.Text = dtgvDSHD1.Rows[index].Cells[1].Value.ToString();
-           // txtNgayLap.Text = dtgvDSHD1.Rows[index].Cells[2].Value.ToString();
-            txtSoLuong.Text = dtgvDSHD1.Rows[index].Cells[2].Value.ToString();
+            // TODO: This line of code loads data into the 'sHOP2DataSet5.CTHD' table. You can move, or remove it, as needed.
+            this.cTHDTableAdapter.Fill(this.sHOP2DataSet5.CTHD);
+            // TODO: This line of code loads data into the 'sHOP2DataSet2.HOADON' table. You can move, or remove it, as needed.
+            this.hOADONTableAdapter.Fill(this.sHOP2DataSet2.HOADON);
+
         }
     }
 }

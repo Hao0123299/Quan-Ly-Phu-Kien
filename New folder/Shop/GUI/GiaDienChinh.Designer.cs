@@ -52,7 +52,6 @@
             this.rbPageDanhMuc = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.SuspendLayout();
@@ -164,10 +163,10 @@
             // 
             this.btnDoiTac.Caption = "Đối tác";
             this.btnDoiTac.Id = 11;
-            this.btnDoiTac.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThongTinKhangHang.ImageOptions.Image")));
-            this.btnDoiTac.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnThongTinKhangHang.ImageOptions.LargeImage")));
+            this.btnDoiTac.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDoiTac.ImageOptions.Image")));
+            this.btnDoiTac.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDoiTac.ImageOptions.LargeImage")));
             this.btnDoiTac.Name = "btnDoiTac";
-            this.btnDoiTac.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThongTinKhangHang_ItemClick);
+      
             // 
             // btnBanHang
             // 
@@ -230,8 +229,7 @@
             // 
             this.rbPageDanhMuc.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup3,
-            this.ribbonPageGroup5,
-            this.ribbonPageGroup6});
+            this.ribbonPageGroup5});
             this.rbPageDanhMuc.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("rbPageDanhMuc.ImageOptions.Image")));
             this.rbPageDanhMuc.Name = "rbPageDanhMuc";
             this.rbPageDanhMuc.Text = "Danh mục";
@@ -245,11 +243,6 @@
             // 
             this.ribbonPageGroup5.ItemLinks.Add(this.btnBanHang);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            // 
-            // ribbonPageGroup6
-            // 
-            this.ribbonPageGroup6.ItemLinks.Add(this.btnBaoCaoCuoiNgay);
-            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
             // 
             // ribbonStatusBar
             // 
@@ -304,6 +297,5 @@
         private DevExpress.XtraBars.BarButtonItem btnBanHang;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.BarButtonItem btnBaoCaoCuoiNgay;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
     }
 }

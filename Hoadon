@@ -1,0 +1,81 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using DevExpress.XtraEditors;
+using DAO;
+using BUS;
+
+namespace GUI
+{
+    public partial class HoaDon : DevExpress.XtraEditors.XtraForm
+    {
+        public HoaDon()
+        {
+            InitializeComponent();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            string MAHD = txtMa.Text;
+            string NVL = txtNhanVien.Text;
+            string NGAYLAP =txtNgayLap.Text;
+            string KH = cmbKhachHang.Text;
+
+            if (HanghoaDAO.Instance.Them(MAHD, NVL, NGAYLAP, KH))
+            {
+                MessageBox.Show("Thêm hóa đơn thành công");
+                HangHoaBUS.Instance.Xem(dtgvDSHD);
+            }
+            else
+            {
+                MessageBox.Show("Thêm hóa đơn thất bại");
+            }
+        }
+
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            string MAHD = txtMa.Text;
+            string NVL = txtNhanVien.Text;
+            string NGAYLAP = txtNgayLap.Text;
+            string KH = cmbKhachHang.Text;
+
+            if (HanghoaDAO.Instance.Them(MAHD, NVL, NGAYLAP, KH))
+            {
+                MessageBox.Show("Thêm hóa đơn thành công");
+                HangHoaBUS.Instance.Xem(dtgvDSHD);
+            }
+            else
+            {
+                MessageBox.Show("Thêm hóa đơn thất bại");
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            string SHD = cmbHH.Text;
+            string MSP = txtDonGia.Text;
+            string SL = txtSL.Text;
+
+            if (HanghoaDAO.Instance.Them(SHD, MSP, SL))
+            {
+                MessageBox.Show("Thêm hóa đơn thành công");
+                HangHoaBUS.Instance.Xem(dtgvDSHH);
+            }
+            else
+            {
+                MessageBox.Show("Thêm hóa đơn thất bại");
+            }
+        }
+    }
+}

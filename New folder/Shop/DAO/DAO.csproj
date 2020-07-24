@@ -47,7 +47,6 @@
     <Compile Include="DataProViDer.cs" />
     <Compile Include="HanghoaDAO.cs" />
     <Compile Include="HoadonDAO.cs" />
-    <Compile Include="KhachhangDAO.cs" />
     <Compile Include="NhanvienDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

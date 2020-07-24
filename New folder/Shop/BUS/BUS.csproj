@@ -44,9 +44,9 @@
   <ItemGroup>
     <Compile Include="ChitiethoadonBUS.cs" />
     <Compile Include="DangkyBUS.cs" />
+    <Compile Include="Doitac.cs" />
     <Compile Include="HanghoaBUS.cs" />
     <Compile Include="HoadonBUS.cs" />
-    <Compile Include="KhachhangBUS.cs" />
     <Compile Include="NhanvienBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
