@@ -33,10 +33,10 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtgvDS = new System.Windows.Forms.DataGridView();
             this.sHOPDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sHOPDataSet = new GUI.SHOPDataSet();
+           
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxHangHoa = new System.Windows.Forms.GroupBox();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblDonGia = new System.Windows.Forms.Label();
@@ -49,8 +49,8 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSet)).BeginInit();
-            this.groupBox1.SuspendLayout();
+    
+            this.groupBoxHangHoa.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnXoa
@@ -93,17 +93,17 @@
             this.dtgvDS.Name = "dtgvDS";
             this.dtgvDS.Size = new System.Drawing.Size(879, 250);
             this.dtgvDS.TabIndex = 1;
+            this.dtgvDS.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvDS_CellClick);
             this.dtgvDS.Click += new System.EventHandler(this.dtgvDS_Click);
             // 
             // sHOPDataSetBindingSource
             // 
-            this.sHOPDataSetBindingSource.DataSource = this.sHOPDataSet;
+
             this.sHOPDataSetBindingSource.Position = 0;
             // 
             // sHOPDataSet
             // 
-            this.sHOPDataSet.DataSetName = "SHOPDataSet";
-            this.sHOPDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+
             // 
             // btnSua
             // 
@@ -131,24 +131,26 @@
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // groupBox1
+            // groupBoxHangHoa
             // 
-            this.groupBox1.Controls.Add(this.txtDonGia);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.lblDonGia);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtDonViTinh);
-            this.groupBox1.Controls.Add(this.txtTen);
-            this.groupBox1.Controls.Add(this.txtMa);
-            this.groupBox1.Location = new System.Drawing.Point(10, 10);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(878, 98);
-            this.groupBox1.TabIndex = 24;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Hàng hóa";
+            this.groupBoxHangHoa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxHangHoa.Controls.Add(this.txtDonGia);
+            this.groupBoxHangHoa.Controls.Add(this.label4);
+            this.groupBoxHangHoa.Controls.Add(this.lblDonGia);
+            this.groupBoxHangHoa.Controls.Add(this.label3);
+            this.groupBoxHangHoa.Controls.Add(this.label1);
+            this.groupBoxHangHoa.Controls.Add(this.txtDonViTinh);
+            this.groupBoxHangHoa.Controls.Add(this.txtTen);
+            this.groupBoxHangHoa.Controls.Add(this.txtMa);
+            this.groupBoxHangHoa.Location = new System.Drawing.Point(10, 10);
+            this.groupBoxHangHoa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBoxHangHoa.Name = "groupBoxHangHoa";
+            this.groupBoxHangHoa.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBoxHangHoa.Size = new System.Drawing.Size(878, 98);
+            this.groupBoxHangHoa.TabIndex = 24;
+            this.groupBoxHangHoa.TabStop = false;
+            this.groupBoxHangHoa.Text = "Hàng hóa";
             // 
             // txtDonGia
             // 
@@ -248,7 +250,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 453);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBoxHangHoa);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnSua);
@@ -256,14 +258,13 @@
             this.Controls.Add(this.btnThem);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "HangHoa";
-            this.Text = "HangHoa";
-            this.Load += new System.EventHandler(this.HangHoa_Load);
+            this.Text = "Hàng hóa";
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSet)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+
+            this.groupBoxHangHoa.ResumeLayout(false);
+            this.groupBoxHangHoa.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -274,7 +275,7 @@
         private System.Windows.Forms.DataGridView dtgvDS;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxHangHoa;
         private System.Windows.Forms.TextBox txtDonGia;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblDonGia;
@@ -285,6 +286,6 @@
         private System.Windows.Forms.TextBox txtMa;
         private System.Windows.Forms.Button btnXem;
         private System.Windows.Forms.BindingSource sHOPDataSetBindingSource;
-        private SHOPDataSet sHOPDataSet;
+     
     }
 }

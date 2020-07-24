@@ -40,7 +40,7 @@
             this.lblMa = new System.Windows.Forms.Label();
             this.groupBoxThongTinChiTiet = new System.Windows.Forms.GroupBox();
             this.dtgvThongTin = new System.Windows.Forms.DataGridView();
-            this.sHOPDataSet = new GUI.SHOPDataSet();
+          
             this.btnXem = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -52,7 +52,7 @@
             this.groupBoxThongTinNhanVien.SuspendLayout();
             this.groupBoxThongTinChiTiet.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSet)).BeginInit();
+        
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -187,9 +187,7 @@
             // 
             // sHOPDataSet
             // 
-            this.sHOPDataSet.DataSetName = "SHOPDataSet";
-            this.sHOPDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
+           
             // btnXem
             // 
             this.btnXem.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -278,7 +276,7 @@
             // sHOPDataSetBindingSource
             // 
             this.sHOPDataSetBindingSource.AllowNew = true;
-            this.sHOPDataSetBindingSource.DataSource = this.sHOPDataSet;
+
             this.sHOPDataSetBindingSource.Position = 0;
             // 
             // Nhanvien
@@ -295,8 +293,7 @@
             this.groupBoxThongTinNhanVien.ResumeLayout(false);
             this.groupBoxThongTinNhanVien.PerformLayout();
             this.groupBoxThongTinChiTiet.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvThongTin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSet)).EndInit();
+           
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -325,7 +322,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dtgvThongTin;
-        private SHOPDataSet sHOPDataSet;
+       
         public System.Windows.Forms.BindingSource sHOPDataSetBindingSource;
     }
 }

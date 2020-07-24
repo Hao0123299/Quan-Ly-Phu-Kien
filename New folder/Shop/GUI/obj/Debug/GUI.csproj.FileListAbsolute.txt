@@ -115,7 +115,6 @@ C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\de\DevExpress.XtraReports.v19
 C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\es\DevExpress.XtraReports.v19.2.resources.dll
 C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\ja\DevExpress.XtraReports.v19.2.resources.dll
 C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\ru\DevExpress.XtraReports.v19.2.resources.dll
-C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.Report.resources
 C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.Dangky.resources
 C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\DevExpress.DataAccess.v19.2.UI.dll
 C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\DevExpress.Utils.v19.2.UI.dll
@@ -198,8 +197,6 @@ C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\de\DevExpress.Diagram.v19.2.C
 C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\es\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\ja\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\HAO\Desktop\New folder\Shop\GUI\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
-C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.XtraForm1.resources
-C:\Users\HAO\Desktop\New folder\Shop\GUI\obj\Debug\GUI.XtraReport1.resources
 F:\GIT\Quan-Ly-Phu-Kien\New folder\Shop\GUI\bin\Debug\GUI.dll.config
 F:\GIT\Quan-Ly-Phu-Kien\New folder\Shop\GUI\bin\Debug\GUI.dll
 F:\GIT\Quan-Ly-Phu-Kien\New folder\Shop\GUI\bin\Debug\GUI.pdb

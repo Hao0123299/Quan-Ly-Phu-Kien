@@ -89,13 +89,18 @@ namespace GUI
 
             txtMa.Text = dtgvDS.Rows[index].Cells[0].Value.ToString();
             txtTen.Text = dtgvDS.Rows[index].Cells[1].Value.ToString();
-            txtDonViTinh.Text = dtgvDS.Rows[index].Cells[2].Value.ToString();
-            txtDonGia.Text = dtgvDS.Rows[index].Cells[3].Value.ToString();
+            txtDonViTinh.Text = dtgvDS.Rows[index].Cells[3].Value.ToString();
+            txtDonGia.Text = dtgvDS.Rows[index].Cells[2].Value.ToString();
         }
 
-        private void HangHoa_Load(object sender, EventArgs e)
-        {
+   
 
+        private void dtgvDS_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            dtgvDS.Columns[0].HeaderText = "Mã sản phẩm";
+            dtgvDS.Columns[1].HeaderText = "Tên sản phẩm";
+            dtgvDS.Columns[2].HeaderText = "Đơn vị tính";
+            dtgvDS.Columns[3].HeaderText = "Giá sản phẩm";
         }
     }
 }

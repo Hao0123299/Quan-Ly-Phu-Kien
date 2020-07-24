@@ -30,7 +30,7 @@ namespace DAO
 
         private DataProVider() { }
 
-        private string connectionStr = @"Data Source=DESKTOP-91UK9PN\SQLEXPRESS;Initial Catalog=SHOP;Integrated Security=True";
+        private string connectionStr = @"Data Source=DESKTOP-91UK9PN\SQLEXPRESS;Initial Catalog=SHOP2;Integrated Security=True";
 
 
 

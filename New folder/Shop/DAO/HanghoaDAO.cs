@@ -59,7 +59,7 @@ namespace DAO
         public bool Them(string MASP, string TENSP, string DVT,  string GIA)
         {       
             string query = "INSERT INTO dbo.SANPHAM ( MASP, TENSP, DVT, GIA ) " +
-                    "VALUES  ( '"+ MASP +"', N'"+ TENSP +"','"+ DVT +"', "+ GIA+")";
+                    "VALUES  ( '"+ MASP +"', N'"+ TENSP +"' ,N'"+ DVT +"', "+ GIA+")";
 
             int result = DataProVider.Instance.ExecuteNonQuery(query);
             return result > 0;

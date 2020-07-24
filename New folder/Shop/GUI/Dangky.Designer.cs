@@ -165,7 +165,7 @@
             this.MaximizeBox = false;
             this.Name = "Dangky";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dangky";
+            this.Text = "Đăng ký";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -35,7 +35,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dtgvDS = new System.Windows.Forms.DataGridView();
             this.sHOPDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sHOPDataSet = new GUI.SHOPDataSet();
+  
             this.groupBoxThonTinKhachhang = new System.Windows.Forms.GroupBox();
             this.cmbGioiTinh = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,7 +48,7 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSet)).BeginInit();
+
             this.groupBoxThonTinKhachhang.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -121,13 +121,7 @@
             // 
             // sHOPDataSetBindingSource
             // 
-            this.sHOPDataSetBindingSource.DataSource = this.sHOPDataSet;
-            this.sHOPDataSetBindingSource.Position = 0;
-            // 
-            // sHOPDataSet
-            // 
-            this.sHOPDataSet.DataSetName = "SHOPDataSet";
-            this.sHOPDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+      
             // 
             // groupBoxThonTinKhachhang
             // 
@@ -248,11 +242,11 @@
             this.Controls.Add(this.groupBoxThonTinKhachhang);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "KhachHang";
-            this.Text = "KhachHang";
+            this.Text = "Đối tác";
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sHOPDataSet)).EndInit();
+
             this.groupBoxThonTinKhachhang.ResumeLayout(false);
             this.groupBoxThonTinKhachhang.PerformLayout();
             this.ResumeLayout(false);
@@ -275,6 +269,6 @@
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.BindingSource sHOPDataSetBindingSource;
-        private SHOPDataSet sHOPDataSet;
+       
     }
 }

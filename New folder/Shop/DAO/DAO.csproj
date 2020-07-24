@@ -41,10 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChittiethoadonDAO.cs" />
     <Compile Include="DangkyDAO.cs" />
     <Compile Include="DangnhapDAO.cs" />
     <Compile Include="DataProViDer.cs" />
     <Compile Include="HanghoaDAO.cs" />
+    <Compile Include="HoadonDAO.cs" />
     <Compile Include="KhachhangDAO.cs" />
     <Compile Include="NhanvienDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -194,7 +194,6 @@ C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\de\DevExpress.Diagram.v19.2.
 C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\es\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\ja\DevExpress.Diagram.v19.2.Core.resources.dll
 C:\Users\HAO\Desktop\New folder\Shop\Shop\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
-C:\Users\HAO\Desktop\New folder\Shop\Shop\obj\Debug\Shop.Report.resources
 F:\GIT\Quan-Ly-Phu-Kien\New folder\Shop\Shop\bin\Debug\Shop.exe.config
 F:\GIT\Quan-Ly-Phu-Kien\New folder\Shop\Shop\bin\Debug\Shop.exe
 F:\GIT\Quan-Ly-Phu-Kien\New folder\Shop\Shop\bin\Debug\Shop.pdb
